@@ -70,7 +70,7 @@ map of Indonesia's forests and protected wildlife, plus the voice-AI products
 
 ## 💚 Support my work
 
-If something I build or maintain has been useful to you, you can chip in. Every bit helps keep the side projects alive, and thank you.
+If Mandum Rimba, or anything else I build and maintain, has been useful to you, you can chip in to help keep it alive. It is a non-profit I run on the side, and every little bit goes a long way. No pressure at all, and thank you for even reading this far.
 
 <p align="center">
   <a target="_blank" href="https://trakteer.id/mabxx6yj8dnsbic9odnj/tip"><img alt="Support on Trakteer" src="https://img.shields.io/badge/Trakteer-Support-ff4d4d?style=for-the-badge" /></a>
@@ -78,12 +78,12 @@ If something I build or maintain has been useful to you, you can chip in. Every 
   <a target="_blank" href="https://paypal.me/rrasyidi"><img alt="Support via PayPal" src="https://img.shields.io/badge/PayPal-Support-003087?style=for-the-badge&logo=paypal&logoColor=white" /></a>
 </p>
 
-<details align="center">
-  <summary><sub>Prefer to scan directly? QRIS &amp; GoPay</sub></summary>
-  <br>
+<p align="center"><sub>Prefer to scan directly? QRIS &amp; GoPay</sub></p>
+
+<p align="center">
   <img src="assets/qris_ammar.png" alt="QRIS, Ammar Rizal Rasyidi" width="230" />
   &nbsp;&nbsp;
   <img src="assets/gopay.png" alt="GoPay, Ammar Rizal Rasyidi" width="230" />
-</details>
+</p>
 
 <p align="center"><sub>Open to backend and full stack roles, and the occasional freelance build worth getting into.</sub></p>
