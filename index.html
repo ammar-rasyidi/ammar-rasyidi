@@ -24,10 +24,10 @@
       }
     </script>
 
-    <title>Ammar Rizal Rasyidi - Full Stack &amp; Backend Developer</title>
+    <title>Ammar Rizal Rasyidi - Full Stack Developer</title>
     <meta
       name="description"
-      content="Ammar Rizal Rasyidi is a backend-leaning full stack developer with 8+ years building APIs, scalable web apps, and the Mandum Rimba open-data map. Open to new roles."
+      content="Ammar Rizal Rasyidi is a full stack developer with 8+ years building web products end to end, from APIs and databases to React and Vue front ends, plus the Mandum Rimba open-data map. Open to new roles."
     />
     <meta name="author" content="Ammar Rizal Rasyidi" />
     <meta
@@ -48,20 +48,20 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Ammar Rizal Rasyidi" />
-    <meta property="og:title" content="Ammar Rizal Rasyidi - Full Stack &amp; Backend Developer" />
+    <meta property="og:title" content="Ammar Rizal Rasyidi - Full Stack Developer" />
     <meta
       property="og:description"
-      content="Backend-leaning full stack developer with 8+ years building APIs, scalable web apps, and the Mandum Rimba open-data map."
+      content="Full stack developer with 8+ years building APIs, scalable web apps, and the Mandum Rimba open-data map."
     />
     <meta property="og:url" content="https://ammar-rasyidi.vercel.app/" />
     <meta property="og:image" content="https://ammar-rasyidi.vercel.app/assets/profile_image.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ammar Rizal Rasyidi - Full Stack &amp; Backend Developer" />
+    <meta name="twitter:title" content="Ammar Rizal Rasyidi - Full Stack Developer" />
     <meta
       name="twitter:description"
-      content="Backend-leaning full stack developer with 8+ years building APIs, scalable web apps, and the Mandum Rimba open-data map."
+      content="Full stack developer with 8+ years building APIs, scalable web apps, and the Mandum Rimba open-data map."
     />
     <meta name="twitter:image" content="https://ammar-rasyidi.vercel.app/assets/profile_image.jpg" />
 
@@ -1027,8 +1027,11 @@
         body {
           background: #fff;
           color: #1a1a1a;
-          font-size: 10.2pt;
-          line-height: 1.42;
+          font-size: 9.7pt;
+          line-height: 1.36;
+        }
+        body {
+          zoom: 0.8;
         }
         .bg-fx,
         nav,
@@ -1046,22 +1049,23 @@
           padding: 0;
         }
         header.hero {
-          padding: 0 0 8px;
+          padding: 0 0 4px;
         }
         .avatar {
-          width: 92px;
-          height: 92px;
-          margin-bottom: 10px;
+          width: 72px;
+          height: 72px;
+          margin-bottom: 7px;
           box-shadow: none;
           border-color: var(--accent-line);
         }
         .hero h1 {
-          font-size: 25pt;
-          margin: 6px 0 0;
+          font-size: 20pt;
+          margin: 4px 0 0;
         }
         .hero .lead {
-          font-size: 11pt;
-          margin-top: 10px;
+          font-size: 9.4pt;
+          line-height: 1.38;
+          margin-top: 6px;
           max-width: none;
         }
         header.hero .hero-cta {
@@ -1074,41 +1078,43 @@
         }
         .contact-card {
           text-align: left;
+          padding: 12px 14px;
+          background: #eef6ef;
         }
         .contact-card .hero-cta {
           display: flex !important;
           justify-content: flex-start;
           margin-top: 0;
         }
-        .stats {
-          margin-top: 14px;
-          gap: 8px;
-          grid-template-columns: repeat(3, 1fr);
-        }
-        .stat {
-          padding: 8px 12px;
-        }
-        .stat .n {
-          font-size: 17pt;
-        }
         section {
-          padding: 12px 0;
-          break-inside: avoid;
+          padding: 7px 0;
         }
         .sec-head {
-          margin-bottom: 14px;
+          margin-bottom: 8px;
         }
         .sec-title {
-          font-size: 15pt;
+          font-size: 13pt;
+        }
+        .sec-sub {
+          margin-top: 4px;
         }
         .skills-grid {
-          gap: 8px;
+          gap: 7px;
           grid-template-columns: repeat(2, 1fr);
         }
-        .skill-card,
-        .proj {
-          padding: 12px 14px;
+        .skill-card {
+          padding: 8px 11px;
           break-inside: avoid;
+        }
+        .skill-card .cat {
+          margin-bottom: 7px;
+        }
+        .proj {
+          padding: 9px 12px;
+          break-inside: avoid;
+        }
+        .proj p {
+          margin: 7px 0 8px;
         }
         .tag {
           background: #f3f5f3;
@@ -1117,10 +1123,27 @@
         }
         .xp {
           break-inside: avoid;
-          padding-bottom: 14px;
+          padding-bottom: 7px;
         }
         .xp h3 {
-          font-size: 12.5pt;
+          font-size: 11pt;
+        }
+        .xp ul {
+          margin-top: 5px;
+          gap: 3px;
+        }
+        .xp ul li {
+          font-size: 9.2pt;
+        }
+        .xp .tags {
+          margin-top: 6px;
+        }
+        .timeline {
+          padding-left: 24px;
+        }
+        #work {
+          break-before: page;
+          break-inside: avoid;
         }
         .featured,
         .proj-grid {
@@ -1131,24 +1154,23 @@
           background: #eef6ef;
         }
         .featured .info {
-          padding: 14px 16px;
+          padding: 10px 14px;
         }
         .featured h3 {
-          font-size: 15pt;
+          font-size: 13pt;
+        }
+        .featured p {
+          margin-top: 7px;
         }
         .proj-grid {
-          gap: 8px;
+          gap: 7px;
           grid-template-columns: repeat(2, 1fr);
         }
         .proj .ext {
           display: none;
         }
-        .contact-card {
-          padding: 16px;
-          background: #eef6ef;
-        }
         footer {
-          padding: 10px 0 0;
+          padding: 8px 0 0;
         }
         a {
           color: #1a1a1a;
@@ -1161,7 +1183,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Ammar Rizal Rasyidi",
-        "jobTitle": "Full Stack & Backend Developer",
+        "jobTitle": "Full Stack Developer",
         "url": "https://ammar-rasyidi.vercel.app/",
         "image": "https://ammar-rasyidi.vercel.app/assets/profile_image.jpg",
         "email": "ammar.r.rasyidi@gmail.com",
@@ -1234,13 +1256,14 @@
         <span class="pill reveal"><span class="pulse"></span> Open to new roles · Remote-friendly, GMT+7</span>
         <h1 class="reveal">Ammar Rizal Rasyidi</h1>
         <p class="lead reveal">
-          I'm a backend-leaning full stack developer with 8+ years of experience.
-          I've built the APIs, databases, and web apps behind real products in
-          <strong>fintech, healthcare, AI, blockchain, and music</strong>, working
-          with teams in Indonesia and Singapore. I like code that reads clearly, APIs
-          people can trust, and work that still behaves a year after launch. On the
-          side I build and run <strong>Mandum Rimba</strong>, an open-source map of
-          Indonesia's forests.
+          I'm a full stack developer with 8+ years of experience. I build web
+          products end to end, from the database and API to the
+          <strong>React or Vue</strong> front end, for real products in
+          <strong>fintech, healthcare, AI, blockchain, and music</strong>, with
+          teams in Indonesia and Singapore. I like code that reads clearly,
+          interfaces that feel right, and work that still behaves a year after
+          launch. On the side I build and run <strong>Mandum Rimba</strong>, an
+          open-source map of Indonesia's forests.
         </p>
         <div class="hero-cta reveal">
           <a class="btn btn-primary" href="#work">
@@ -1274,8 +1297,8 @@
           <h2 class="sec-title">What I build with</h2>
           <p class="sec-sub">
             Across agencies, a government office, and product teams, I learned to
-            start with the data model and the API, then build out to the screen.
-            This is where I'm strongest.
+            take a product from the database and API all the way to a front end
+            that feels right. Here's what I reach for most.
           </p>
         </div>
         <div class="skills-grid">
@@ -1382,7 +1405,7 @@
           <div class="info">
             <span class="badge">★ Open source</span>
             <h3>Mandum Rimba</h3>
-            <div class="role">Creator &amp; maintainer · 2025 - now</div>
+            <div class="role">Creator &amp; maintainer · 2026 - now</div>
             <p>
               An independent, non-profit map of Indonesia's forests and wildlife. I
               built it full stack: a Next.js front end with an interactive MapLibre
@@ -1423,6 +1446,18 @@
               <span class="status live"><span class="d"></span>Live</span>
             </div>
             <p>An Indonesian text-to-speech product for content creators, with voice cloning and emotional tone control. I built the backend and the GPU inference pipeline behind the voices, plus local billing through QRIS and e-wallets.</p>
+            <div class="tags"><span class="tag">NestJS</span><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">Modal (GPU)</span><span class="tag">MongoDB</span></div>
+          </a>
+
+          <a class="proj reveal" href="https://voicelyf.com" target="_blank" rel="noreferrer">
+            <div class="ph">
+              <div>
+                <h3>Voicelyf</h3>
+                <div class="role">Creator &amp; Full Stack Developer</div>
+              </div>
+              <span class="status live"><span class="d"></span>Live</span>
+            </div>
+            <p>A global AI voice studio for creators, English-first with multilingual voices. It does text-to-speech, voice cloning, and per-line emotion control, rendering hours of studio-quality audio. I built the backend and the GPU inference pipeline behind the voices.</p>
             <div class="tags"><span class="tag">NestJS</span><span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">Modal (GPU)</span><span class="tag">MongoDB</span></div>
           </a>
 
