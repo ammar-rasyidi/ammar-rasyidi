@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://ammar-rasyidi.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-16a34a?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/ammar-rizal-rasyidi"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/ammar-rizal-rasyidi-6726991a1"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://www.threads.com/@r.rasyidi"><img src="https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white" alt="Threads" /></a>
   <a href="mailto:ammar.r.rasyidi@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <img src="https://komarev.com/ghpvc/?username=ammar-rasyidi&color=16a34a&style=for-the-badge&label=Profile+views" alt="Profile views" />
