@@ -65,8 +65,25 @@ map of Indonesia's forests and protected wildlife, plus the voice-AI products
 ## 📊 GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ammar-rasyidi&show_icons=true&hide_border=true&title_color=16a34a&icon_color=16a34a&text_color=9ba29c&bg_color=0d1117" alt="GitHub stats" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ammar-rasyidi&layout=compact&hide_border=true&title_color=16a34a&text_color=9ba29c&bg_color=0d1117" alt="Top languages" />
 </p>
+
+## 💚 Support my work
+
+If something I build or maintain has been useful to you, you can chip in. Every bit helps keep the side projects alive, and thank you.
+
+<p align="center">
+  <a target="_blank" href="https://trakteer.id/mabxx6yj8dnsbic9odnj/tip"><img alt="Support on Trakteer" src="https://img.shields.io/badge/Trakteer-Support-ff4d4d?style=for-the-badge" /></a>
+  &nbsp;
+  <a target="_blank" href="https://paypal.me/rrasyidi"><img alt="Support via PayPal" src="https://img.shields.io/badge/PayPal-Support-003087?style=for-the-badge&logo=paypal&logoColor=white" /></a>
+</p>
+
+<details align="center">
+  <summary><sub>Prefer to scan directly? QRIS &amp; GoPay</sub></summary>
+  <br>
+  <img src="assets/qris_ammar.png" alt="QRIS, Ammar Rizal Rasyidi" width="230" />
+  &nbsp;&nbsp;
+  <img src="assets/gopay.png" alt="GoPay, Ammar Rizal Rasyidi" width="230" />
+</details>
 
 <p align="center"><sub>Open to backend and full stack roles, and the occasional freelance build worth getting into.</sub></p>
