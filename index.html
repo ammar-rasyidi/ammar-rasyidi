@@ -630,7 +630,7 @@
       .timeline {
         position: relative;
         margin-left: 8px;
-        padding-left: 30px;
+        padding-left: 28px;
         border-left: 1px solid var(--border);
       }
       .xp {
@@ -1023,6 +1023,18 @@
           --card-shadow: none;
           --on-accent: #ffffff;
         }
+        /* Fix Chrome "Save as PDF" glyph scrambling: kerning + optimizeLegibility
+           + negative letter-spacing emit glyphs out of order in the PDF text layer,
+           which drops word spaces and floats stray letters. Disable text shaping. */
+        * {
+          letter-spacing: normal !important;
+          word-spacing: normal !important;
+          text-rendering: optimizeSpeed !important;
+          font-kerning: none !important;
+          font-variant-ligatures: none !important;
+          -webkit-font-feature-settings: normal !important;
+          font-feature-settings: normal !important;
+        }
         html,
         body {
           background: #fff;
@@ -1060,12 +1072,12 @@
         }
         .hero h1 {
           font-size: 20pt;
-          margin: 4px 0 0;
+          margin: 14px 0 0;
         }
         .hero .lead {
-          font-size: 9.4pt;
-          line-height: 1.38;
-          margin-top: 6px;
+          font-size: 10.8pt;
+          line-height: 1.45;
+          margin-top: 8px;
           max-width: none;
         }
         header.hero .hero-cta {
@@ -1096,7 +1108,10 @@
           font-size: 13pt;
         }
         .sec-sub {
-          margin-top: 4px;
+          margin-top: 6px;
+          max-width: none;
+          font-size: 10pt;
+          line-height: 1.45;
         }
         .skills-grid {
           gap: 7px;
@@ -1140,6 +1155,9 @@
         }
         .timeline {
           padding-left: 24px;
+        }
+        .xp::before {
+          left: -31px;
         }
         #work {
           break-before: page;
@@ -1262,7 +1280,7 @@
         <p class="lead reveal">
           I'm a full stack developer with 8+ years of experience. I build web
           products end to end, from the database and API to the
-          <strong>React or Vue</strong> front end, for real products in
+          <strong>Next JS</strong> front end, for real products in
           <strong>fintech, healthcare, AI, blockchain, and music</strong>, with
           teams in Indonesia and Singapore. I like code that reads clearly,
           interfaces that feel right, and work that still behaves a year after
@@ -1347,7 +1365,7 @@
             <h3>Full Stack Developer</h3>
             <div class="org">Undercurrent Technology · Singapore</div>
             <ul>
-              <li>Owned client web apps end to end, from the database and API up to the React or Vue front end.</li>
+              <li>Owned client web apps end to end, from the database and API up to the Next JS front end.</li>
               <li>Designed REST APIs the rest of the team could build on without second-guessing.</li>
               <li>Worked straight with clients to turn rough ideas into features that actually shipped.</li>
             </ul>
