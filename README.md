@@ -56,7 +56,6 @@ map of Indonesia's forests and protected wildlife, plus the voice-AI products
 | --- | --- | --- |
 | **[Mandum Rimba](https://mandumrimba.org)** · open source | A non-profit map of Indonesia's forests and wildlife, built full stack. I designed it, wrote every layer, and keep it running. | Next.js · MapLibre · NestJS · MongoDB |
 | **[Suara AI](https://suaraai.id)** · live | Indonesian text-to-speech for creators, with voice cloning and a GPU inference pipeline. | NestJS · Next.js · Python · Modal |
-| **[Voicelyf](https://voicelyf.com)** · live | A global AI voice studio, English-first with multilingual voices, voice cloning, and emotion control. | NestJS · Next.js · Python · Modal |
 | **Straits Financial** · internal | Moved bond trading onto the Algorand blockchain for faster, cleaner settlement. | TypeScript · Laravel · Algorand · DocuSign |
 | **[Jroh Creative](https://jrohcreative.com)** · live | A marketplace for selling fonts and design mockups, backend to storefront. | Laravel · MySQL · Linux |
 | **Opulous** · offline | A blockchain platform for tokenizing music rights. | NestJS · Next.js · Ethers.js |
@@ -65,7 +64,7 @@ map of Indonesia's forests and protected wildlife, plus the voice-AI products
 ## 📊 GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ammar-rasyidi&layout=compact&hide_border=true&title_color=16a34a&text_color=9ba29c&bg_color=0d1117" alt="Top languages" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ammar-rasyidi&theme=github-dark&hide_border=true" alt="Activity Graph" />
 </p>
 
 ## 💚 Support my work
