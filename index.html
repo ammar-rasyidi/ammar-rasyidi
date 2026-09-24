@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,7 +35,7 @@
       content="Ammar Rizal Rasyidi, full stack developer, backend developer, software engineer, Node.js, NestJS, Laravel, TypeScript, React, Next.js, MongoDB, Indonesia"
     />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#181818" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
 
     <!-- Update this domain after you connect a custom domain on Vercel -->
@@ -68,7 +68,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -422,24 +422,6 @@
         padding: 6px 14px;
         border-radius: 999px;
         font-family: "JetBrains Mono", monospace;
-      }
-      .pulse {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--accent);
-        animation: pulse 2s infinite;
-      }
-      @keyframes pulse {
-        0% {
-          box-shadow: 0 0 0 0 rgba(134, 239, 172, 0.45);
-        }
-        70% {
-          box-shadow: 0 0 0 9px rgba(134, 239, 172, 0);
-        }
-        100% {
-          box-shadow: 0 0 0 0 rgba(134, 239, 172, 0);
-        }
       }
       .hero h1 {
         font-size: clamp(44px, 8vw, 82px);
@@ -996,207 +978,211 @@
         }
       }
 
-      /* ===================================================================
-         PRINT, collapse the portfolio into a clean light A4 CV
-         =================================================================== */
-      @page {
-        size: A4;
-        margin: 0;
+      /* Fresh greens drawn from the Mandum Rimba logo (#4CAF50). Keep the existing spacing and grid structure. */
+      :root,
+      :root[data-theme="dark"] {
+        --bg: #181818;
+        --surface: #202020;
+        --surface-2: #292929;
+        --border: #304b36;
+        --border-2: #4b7052;
+        --text: #f3faf3;
+        --muted: #bdcfbf;
+        --faint: #a0bba5;
+        --brand-green: #4caf50;
+        --accent: #69d66e;
+        --accent-3: #81e586;
+        --accent-soft: #203e27;
+        --accent-line: #3e7946;
+        --accent-glow: transparent;
+        --chip-bg: #203525;
+        --nav-bg: #202020f5;
+        --card-shadow: 0 2px 5px #0000000d;
+        --on-accent: #102915;
       }
+      :root[data-theme="light"] {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --surface-2: #ecf7e9;
+        --border: #e3e5e2;
+        --border-2: #c7cdc6;
+        --text: #19351e;
+        --muted: #4e6651;
+        --faint: #5d755f;
+        --brand-green: #4caf50;
+        --accent: #287d2d;
+        --accent-3: #216b26;
+        --accent-soft: #e5f6df;
+        --accent-line: #9bd391;
+        --accent-glow: transparent;
+        --chip-bg: #edf7e9;
+        --nav-bg: #fffffff5;
+        --card-shadow: none;
+        --on-accent: #102915;
+      }
+      .bg-fx { display: none; }
+      .bg-fx::after { display: none; }
+      .nav-in {
+        border-radius: 8px;
+        box-shadow: none;
+      }
+      .brand .dot, .btn-primary, .badge {
+        background: var(--brand-green);
+        box-shadow: none;
+      }
+      .btn-primary { color: #ffffff; }
+      .brand .dot, .btn, .theme-btn, .nav-toggle,
+      .icon-links a, .link-chip, .skill-card .cat .ic {
+        border-radius: 6px;
+      }
+      .mobile-menu { border-radius: 8px; }
+      .avatar {
+        border-color: var(--border-2);
+        box-shadow: none;
+      }
+      .hero h1 { font-weight: 600; letter-spacing: -0.055em; }
+      .hero h1 .grad, .stat .n {
+        background: none;
+        color: var(--accent);
+      }
+      .sec-title, .contact-card h2 { font-weight: 600; }
+      .eyebrow {
+        font-family: "Caveat", "Segoe Print", cursive;
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+      .pill {
+        font-family: inherit;
+        color: var(--muted);
+        background: transparent;
+        border-color: transparent;
+      }
+      .stat, .skill-card, .proj { border-radius: 8px; }
+      .featured, .contact-card {
+        background: var(--surface);
+        border-radius: 10px;
+      }
+      .featured .art,
+      :root[data-theme="light"] .featured .art {
+        background: var(--accent-soft);
+      }
+      .logo-plate { border-radius: 8px; box-shadow: 0 4px 16px #0000000d; }
+      .tag { border-radius: 4px; }
+      .badge { border-radius: 4px; }
+      .status.internal {
+        color: var(--muted);
+        background: var(--chip-bg);
+        border-color: var(--border-2);
+      }
+      .skill-card:hover { transform: none; border-color: var(--border); }
+      a.proj:hover { transform: translateY(-2px); border-color: var(--accent); }
+      a:focus-visible, button:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 5px;
+      }
+      .nav-links a:hover, .mobile-menu a:hover, footer a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+      ::selection { background: var(--brand-green); color: var(--on-accent); }
+
+      /* Print always uses white paper with the same green accents and typography. */
+      @page { size: A4; margin: 12mm; }
       @media print {
-        :root,
-        :root[data-theme="dark"],
-        :root[data-theme="light"] {
-          --text: #1a1a1a;
-          --muted: #444;
-          --faint: #777;
-          --accent: #1f7a34;
-          --accent-3: #1f7a34;
-          --border: #dcdcdc;
-          --border-2: #cfcfcf;
-          --surface: #fff;
-          --surface-2: #fff;
-          --accent-soft: #eef6ef;
-          --accent-line: #cfe3d2;
-          --accent-glow: transparent;
-          --grad-from: #111;
+        :root, :root[data-theme="dark"], :root[data-theme="light"] {
+          color-scheme: light;
+          --bg: #ffffff;
+          --surface: #ffffff;
+          --surface-2: #f5f7f4;
+          --text: #19351e;
+          --muted: #4e6651;
+          --faint: #5d755f;
+          --border: #e3e5e2;
+          --border-2: #c7cdc6;
+          --accent: #287d2d;
+          --accent-3: #216b26;
+          --accent-soft: #e5f6df;
+          --accent-line: #9bd391;
+          --chip-bg: #f5f7f4;
           --card-shadow: none;
-          --on-accent: #ffffff;
+          --on-accent: #102915;
         }
-        /* Fix Chrome "Save as PDF" glyph scrambling: kerning + optimizeLegibility
-           + negative letter-spacing emit glyphs out of order in the PDF text layer,
-           which drops word spaces and floats stray letters. Disable text shaping. */
+        html { background: #ffffff; scroll-behavior: auto; }
+        body { background: #ffffff; transition: none; }
+        nav, .mobile-menu, .no-print, .bg-fx { display: none !important; }
+        .reveal { opacity: 1 !important; transform: none !important; }
         * {
-          letter-spacing: normal !important;
-          word-spacing: normal !important;
+          animation: none !important;
+          transition: none !important;
           text-rendering: optimizeSpeed !important;
           font-kerning: none !important;
           font-variant-ligatures: none !important;
-          -webkit-font-feature-settings: normal !important;
-          font-feature-settings: normal !important;
         }
-        html,
-        body {
-          background: #fff;
-          color: #1a1a1a;
-          font-size: 9.7pt;
-          line-height: 1.36;
+        body { font-size: 9pt; line-height: 1.42; }
+        .wrap { max-width: none; padding: 0; }
+        header.hero { padding: 0 0 12px; }
+        .avatar { width: 64px; height: 64px; margin-bottom: 8px; border-width: 1px; }
+        .pill { font-size: 8pt; padding: 0; }
+        .hero h1 { font-size: 27pt; margin-top: 8px; }
+        .hero .lead { font-size: 9pt; line-height: 1.45; margin-top: 10px; max-width: 92ch; }
+        header.hero .hero-cta, .icon-links, button, footer,
+        #contact .eyebrow, #contact h2, #contact p { display: none !important; }
+        section { padding: 10px 0; }
+        .sec-head { margin-bottom: 12px; break-after: avoid; }
+        .eyebrow { font-size: 14pt; }
+        .sec-title { font-size: 17pt; margin-top: 5px; }
+        .sec-sub { font-size: 8.5pt; margin-top: 6px; max-width: none; }
+        .skills-grid, .proj-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+        .skill-card { padding: 10px 12px; }
+        .skill-card .cat { font-size: 9pt; margin-bottom: 7px; gap: 7px; }
+        .skill-card .cat .ic { width: 23px; height: 23px; }
+        .tags { gap: 4px; }
+        .tag { font-size: 7pt; padding: 2px 6px; }
+        .timeline { margin-left: 6px; padding-left: 20px; }
+        .xp { padding-bottom: 14px; }
+        .xp::before { left: -26px; width: 9px; height: 9px; box-shadow: none; }
+        .xp .when { font-size: 7.5pt; }
+        .xp h3 { font-size: 11pt; margin-top: 3px; }
+        .xp .org { font-size: 8pt; }
+        .xp ul { margin-top: 6px; gap: 3px; }
+        .xp ul li { font-size: 8.5pt; padding-left: 13px; }
+        .xp ul li::before { width: 4px; height: 4px; top: 6px; }
+        .xp .tags, #about .sec-sub { display: none; }
+        #work { break-before: page; padding-top: 0; }
+        .featured { grid-template-columns: 1.4fr 0.6fr; margin-bottom: 12px; }
+        .featured .info { padding: 15px; }
+        .featured .art {
+          min-height: 0; padding: 12px; order: initial;
+          border-bottom: none; border-left: 1px solid var(--accent-line);
         }
-        body {
-          zoom: 0.8;
+        .logo-plate { padding: 12px; box-shadow: none; }
+        .badge { font-size: 7pt; padding: 3px 7px; }
+        .featured h3 { font-size: 16pt; margin-top: 8px; }
+        .featured .role, .proj .role { font-size: 7.5pt; }
+        .featured p, .proj p { font-size: 8.5pt; line-height: 1.45; margin: 8px 0; }
+        .featured .links { gap: 12px; margin: 9px 0; }
+        .link-chip { font-size: 7.5pt; padding: 0; border: 0; background: none; }
+        .link-chip svg { display: none; }
+        .proj { padding: 12px; }
+        .proj h3 { font-size: 11pt; }
+        .proj .ph { gap: 6px; }
+        .status { font-size: 6pt; padding: 2px 5px; }
+        .skill-card, .proj, .xp, .featured, .contact-card, header.hero { break-inside: avoid; }
+        h2, h3 { break-after: avoid; }
+        p, li { orphans: 3; widows: 3; }
+        #contact { padding: 10px 0 0; }
+        .contact-card { border: 0; border-top: 1px solid var(--border); border-radius: 0; padding: 12px 0 0; }
+        .contact-card .hero-cta { margin: 0; justify-content: center; gap: 14px; }
+        .contact-card .btn {
+          background: none; border: 0; border-radius: 0; box-shadow: none;
+          padding: 0; color: var(--text); font-size: 8pt;
         }
-        .bg-fx,
-        nav,
-        .icon-links,
-        .featured .art,
-        .no-print {
-          display: none !important;
-        }
-        .reveal {
-          opacity: 1 !important;
-          transform: none !important;
-        }
-        .wrap {
-          max-width: none;
-          padding: 0 16mm;
-        }
-        header.hero {
-          padding: 15mm 0 4px;
-        }
-        .avatar {
-          width: 72px;
-          height: 72px;
-          margin-bottom: 7px;
-          box-shadow: none;
-          border-color: var(--accent-line);
-        }
-        .hero h1 {
-          font-size: 20pt;
-          margin: 14px 0 0;
-        }
-        .hero .lead {
-          font-size: 10.8pt;
-          line-height: 1.45;
-          margin-top: 8px;
-          max-width: none;
-        }
-        header.hero .hero-cta {
-          display: none;
-        }
-        #contact .eyebrow,
-        #contact h2,
-        #contact p {
-          display: none;
-        }
-        .contact-card {
-          text-align: left;
-          padding: 12px 14px;
-          background: #eef6ef;
-        }
-        .contact-card .hero-cta {
-          display: flex !important;
-          justify-content: flex-start;
-          margin-top: 0;
-        }
-        section {
-          padding: 7px 0;
-        }
-        .sec-head {
-          margin-bottom: 8px;
-        }
-        .sec-title {
-          font-size: 13pt;
-        }
-        .sec-sub {
-          margin-top: 6px;
-          max-width: none;
-          font-size: 10pt;
-          line-height: 1.45;
-        }
-        .skills-grid {
-          gap: 7px;
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .skill-card {
-          padding: 8px 11px;
-          break-inside: avoid;
-        }
-        .skill-card .cat {
-          margin-bottom: 7px;
-        }
-        .proj {
-          padding: 9px 12px;
-          break-inside: avoid;
-        }
-        .proj p {
-          margin: 7px 0 8px;
-        }
-        .tag {
-          background: #f3f5f3;
-          color: #444;
-          border-color: #e2e2e2;
-        }
-        .xp {
-          break-inside: avoid;
-          padding-bottom: 7px;
-        }
-        .xp h3 {
-          font-size: 11pt;
-        }
-        .xp ul {
-          margin-top: 5px;
-          gap: 3px;
-        }
-        .xp ul li {
-          font-size: 9.2pt;
-        }
-        .xp .tags {
-          margin-top: 6px;
-        }
-        .timeline {
-          padding-left: 24px;
-        }
-        .xp::before {
-          left: -31px;
-        }
-        #work {
-          break-before: page;
-          break-inside: avoid;
-          padding-top: 15mm;
-        }
-        #contact {
-          padding-bottom: 15mm;
-        }
-        .featured,
-        .proj-grid {
-          break-inside: avoid;
-        }
-        .featured {
-          grid-template-columns: 1fr;
-          background: #eef6ef;
-        }
-        .featured .info {
-          padding: 10px 14px;
-        }
-        .featured h3 {
-          font-size: 13pt;
-        }
-        .featured p {
-          margin-top: 7px;
-        }
-        .proj-grid {
-          gap: 7px;
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .proj .ext {
-          display: none;
-        }
-        footer {
-          display: none;
-        }
-        a {
-          color: #1a1a1a;
-        }
+        .contact-card .btn svg { display: none; }
+
       }
     </style>
 
@@ -1275,7 +1261,7 @@
     <header class="hero" id="top">
       <div class="wrap">
         <img class="avatar reveal" src="assets/profile_image.jpg" alt="Ammar Rizal Rasyidi" width="138" height="138" />
-        <span class="pill reveal"><span class="pulse"></span> Open to new roles · Remote-friendly, GMT+7</span>
+        <span class="pill reveal">Open to new roles / Remote-friendly, GMT+7</span>
         <h1 class="reveal">Ammar Rizal Rasyidi</h1>
         <p class="lead reveal">
           I'm a full stack developer with 8+ years of experience. I build web
@@ -1577,7 +1563,7 @@
           t === "dark" ? "Switch to light theme" : "Switch to dark theme",
         );
       }
-      applyTheme(localStorage.getItem("theme") || "dark");
+      applyTheme("light");
       tbtn.addEventListener("click", () => {
         const next =
           root.getAttribute("data-theme") === "dark" ? "light" : "dark";
