@@ -1265,8 +1265,42 @@
       @media (max-width: 760px) { .hero h1 { white-space: normal; font-size: clamp(50px,16vw,70px); } }
       @media (max-width: 620px) { .wrap { padding: 0 18px; } .hero { padding-top: 44px; } header.hero > .wrap { min-height: 0; } .hero-scene { min-height: 380px; transform: scale(.91); transform-origin: top center; margin-bottom: -34px; } .portrait-orbit { width: 250px; right: 17%; } .scene-card { width: 135px; } .scene-card-map { left: 1%; } .scene-card-game { right: 1%; } .scene-message { width: 125px; } .scene-cat { width: 100px; } .scene-handheld { width: 90px; } .scene-globe { width: 78px; } .skills-grid,.timeline { grid-template-columns: 1fr; } .hero-kicker { font-size: 10px; } }
 
+      /* Lam Rimba screenshots */
+      .lam-carousel { position: relative; width: min(100%, 600px); aspect-ratio: 2940 / 1544; overflow: hidden; border: 1px solid rgba(255,255,255,.78); border-radius: 24px 18px 25px 20px; background: #183b58; box-shadow: 0 20px 48px rgba(17,48,78,.24), inset 0 1px rgba(255,255,255,.7); }
+      .lam-carousel-track { position: absolute; inset: 0; display: flex; width: 100%; height: 100%; transition: transform .58s cubic-bezier(.2,.8,.2,1); }
+      .lam-carousel-slide { flex: 0 0 100%; width: 100%; min-width: 100%; height: 100%; margin: 0; }
+      .lam-carousel-slide img { display: block; width: 100%; height: 100%; object-fit: fill; }
+      .lam-carousel-controls { position: absolute; right: 12px; bottom: 12px; left: 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px; border: 1px solid rgba(255,255,255,.58); border-radius: 999px; background: rgba(255,255,255,.7); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+      .lam-carousel-arrow { display: grid; width: 32px; height: 32px; padding: 0; place-items: center; color: #17385d; border: 1px solid rgba(34,76,119,.15); border-radius: 50%; background: #fff; box-shadow: 0 4px 12px rgba(17,48,78,.14); cursor: pointer; }
+      .lam-carousel-arrow:hover { background: #dcecff; transform: translateY(-1px); }
+      .lam-carousel-arrow svg { width: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .lam-carousel-dots { display: flex; align-items: center; justify-content: center; gap: 6px; }
+      .lam-carousel-dots button { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 999px; background: rgba(23,56,93,.3); cursor: pointer; transition: width .25s ease, background .25s ease; }
+      .lam-carousel-dots button[aria-selected="true"] { width: 22px; background: #4d8ff7; }
+      :root[data-theme="dark"] .lam-carousel-controls { border-color: rgba(255,255,255,.15); background: rgba(10,25,44,.72); }
+      :root[data-theme="dark"] .lam-carousel-arrow { color: #dcecff; border-color: rgba(255,255,255,.12); background: #193556; }
+      :root[data-theme="dark"] .lam-carousel-dots button { background: rgba(220,236,255,.35); }
+      :root[data-theme="dark"] .lam-carousel-dots button[aria-selected="true"] { background: #79acff; }
+      .lam-project-heading { display: flex; align-items: center; gap: 16px; }
+      .lam-project-logo { display: grid; flex: 0 0 86px; width: 86px; height: 86px; padding: 11px; place-items: center; border: 1px solid rgba(255,255,255,.75); border-radius: 25px 19px 23px 17px; background: rgba(255,255,255,.58); box-shadow: 0 11px 26px rgba(21,57,91,.12), inset 0 1px rgba(255,255,255,.8); }
+      .lam-project-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+      .lam-project-heading h3 { margin-top: 8px; }
+      .lam-featured .lam-carousel { width: 100%; max-width: none; }
+      .lam-carousel-zoom { display: block; width: 100%; min-width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+      .lam-carousel-zoom:focus-visible { outline: 3px solid #fff; outline-offset: -7px; }
+      .lam-lightbox { width: min(96vw, 145vh); max-width: none; margin: auto; padding: 0; border: 1px solid rgba(255,255,255,.25); border-radius: 28px; background: rgba(9,25,43,.94); box-shadow: 0 28px 90px rgba(0,0,0,.52); color: #fff; }
+      .lam-lightbox::backdrop { background: rgba(7,15,28,.76); backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); }
+      .lam-lightbox-panel { position: relative; display: grid; gap: 14px; padding: 14px; }
+      .lam-lightbox-image { display: block; width: 100%; height: auto; aspect-ratio: 2940 / 1544; object-fit: fill; border-radius: 18px; }
+      .lam-lightbox-close { position: absolute; z-index: 1; top: 24px; right: 24px; display: grid; width: 38px; height: 38px; padding: 0; place-items: center; color: #183b58; border: 1px solid rgba(22,55,87,.16); border-radius: 50%; background: rgba(255,255,255,.92); box-shadow: 0 5px 18px rgba(0,0,0,.18); font-size: 27px; line-height: 1; cursor: pointer; }
+      .lam-lightbox-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 300px; width: 100%; margin: 0 auto; }
+      .lam-lightbox .lam-carousel-dots button { background: rgba(221,236,255,.38); }
+      .lam-lightbox .lam-carousel-dots button[aria-selected="true"] { background: #79acff; }
+      @media (max-width: 620px) { .lam-project-heading { align-items: flex-start; gap: 11px; } .lam-project-logo { flex-basis: 62px; width: 62px; height: 62px; padding: 8px; border-radius: 18px 14px 17px 12px; } .lam-lightbox { width: 100vw; border-radius: 0; } .lam-lightbox-panel { padding: 8px; } .lam-lightbox-image { max-height: 78vh; border-radius: 12px; } .lam-lightbox-close { top: 17px; right: 17px; } }
+      @media (prefers-reduced-motion: reduce) { .lam-carousel-track, .lam-carousel-dots button { transition: none; } }
+
       /* Print always uses white paper with the same green accents and typography. */
-      @page { size: A4; margin: 12mm; }
+      @page { size: A4 landscape; margin: 8mm; }
       @media print {
         :root, :root[data-theme="dark"], :root[data-theme="light"] {
           color-scheme: light;
@@ -1357,6 +1391,111 @@
           padding: 0; color: var(--text); font-size: 8pt;
         }
         .contact-card .btn svg { display: none; }
+
+        /* Screen-only clay composition must not leak into the document layout. */
+        .hero-scene,
+        .hero-flags,
+        .hero-kicker,
+        .scene-image,
+        .scene-glow,
+        .scene-note { display: none !important; }
+        header.hero > .wrap { display: block !important; min-height: 0 !important; }
+        .hero-copy { display: block !important; }
+        .hero h1 { white-space: normal !important; color: #19351e !important; -webkit-text-fill-color: #19351e !important; }
+        .hero h1 span { color: #287d2d !important; }
+        .clay-card,
+        .clay-card::before,
+        .clay-card::after {
+          translate: none !important;
+          rotate: none !important;
+          scale: 1 !important;
+          filter: none !important;
+          backdrop-filter: none !important;
+          -webkit-backdrop-filter: none !important;
+          box-shadow: none !important;
+        }
+        .clay-card { background: #ffffff !important; border: 1px solid #e3e5e2 !important; border-radius: 6px !important; overflow: visible !important; }
+        .clay-card::before,
+        .clay-card::after { display: none !important; }
+        #about { padding: 4px 0 0 !important; }
+        #experience { padding-top: 0 !important; }
+        .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 7px !important; }
+        .skill-card { min-height: 0 !important; padding: 9px 11px !important; }
+        .skill-card .cat { margin-bottom: 6px !important; }
+        .skill-card .cat .ic { width: 21px !important; height: 21px !important; }
+        .timeline { display: block !important; margin-left: 6px !important; padding-left: 20px !important; border-left: 1px solid #c7cdc6 !important; }
+        .xp { min-height: 0 !important; padding: 0 0 12px !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; break-inside: avoid !important; }
+        .xp::before { display: block !important; background: #ffffff !important; border-color: #287d2d !important; }
+        .xp ul { display: grid !important; }
+        .project-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; margin: 8px 0 4px !important; gap: 6px !important; }
+        .project-metric { padding: 7px !important; background: #f5f7f4 !important; border: 1px solid #e3e5e2 !important; box-shadow: none !important; }
+        .project-metric strong { font-size: 14pt !important; }
+        .project-metric span { font-size: 6.5pt !important; }
+        .metrics-note { font-size: 6.5pt !important; margin-top: 5px !important; }
+        .featured .art { display: none !important; }
+        .featured { grid-template-columns: 1fr !important; }
+        .featured .info { padding: 14px !important; }
+        .featured { margin-bottom: 8px !important; }
+        .proj-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 7px !important; }
+        .proj { padding: 9px !important; }
+        .proj h3 { font-size: 9.5pt !important; }
+        .proj .role { font-size: 6.5pt !important; }
+        .proj p { font-size: 7.3pt !important; line-height: 1.34 !important; margin: 6px 0 9px !important; }
+        .proj .tags { gap: 3px !important; }
+        .proj .tag { font-size: 5.8pt !important; padding: 1px 4px !important; }
+        #contact, footer { display: none !important; }
+
+        /* Keep the website's clay and glass identity in the PDF, but freeze it. */
+        :root, :root[data-theme="dark"], :root[data-theme="light"] {
+          --bg: #f2f0ff;
+          --text: #102646;
+          --muted: #58718f;
+          --accent: #4d8ff7;
+          --accent-3: #7b71e8;
+          --accent-soft: #e8f1ff;
+          --accent-line: #b9d4ff;
+          --border: #dbe6f4;
+          --border-2: #b9cee7;
+          --chip-bg: #f5f9ff;
+        }
+        html, body { background: #f2f0ff !important; }
+        header.hero { padding: 18px !important; background: #edf0ff !important; border: 1px solid #d5e1fc !important; border-radius: 18px !important; }
+        header.hero > .wrap { display: grid !important; grid-template-columns: minmax(0, 1fr) 250px !important; align-items: center !important; gap: 12px !important; }
+        .hero-copy { display: block !important; }
+        .hero-kicker { display: block !important; color: #4d78ae !important; font-size: 7.5pt !important; }
+        .hero h1 { font-size: 29pt !important; margin: 8px 0 0 !important; line-height: .98 !important; }
+        .hero .lead { font-size: 8.5pt !important; margin-top: 9px !important; max-width: none !important; }
+        .hero-scene { display: block !important; position: relative !important; min-height: 210px !important; overflow: hidden !important; isolation: isolate !important; }
+        .scene-glow { display: block !important; }
+        .scene-image, .scene-note { display: block !important; }
+        .scene-note { font-size: 6.5pt !important; padding: 7px 9px !important; }
+        .hero-flags, .hero-cta, .icon-links { display: none !important; }
+        .clay-card { background: #ffffff !important; border: 1px solid #d9e7fa !important; box-shadow: 0 6px 14px rgba(80, 116, 164, .12) !important; border-radius: 12px !important; }
+        .clay-card::before { display: block !important; border-color: #4d8ff7 !important; opacity: .08 !important; }
+        .clay-card::after { display: block !important; background: #7b71e8 !important; opacity: .22 !important; }
+        .skill-card .cat .ic { background: #e8f1ff !important; color: #4d8ff7 !important; }
+        .tag, .project-metric { background: #f5f9ff !important; border-color: #dbe6f4 !important; color: #526d8c !important; }
+        .badge { background: #4d8ff7 !important; color: #ffffff !important; }
+        .status.live { color: #258f61 !important; background: #e8f8ee !important; border-color: #9bdbb7 !important; }
+        #experience { break-before: auto !important; padding-top: 7px !important; }
+        #experience .sec-head { margin-bottom: 7px !important; }
+        .timeline { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 7px !important; margin: 0 !important; padding: 0 !important; border: 0 !important; }
+        .xp { padding: 9px !important; border: 1px solid #d9e7fa !important; border-radius: 11px !important; background: #ffffff !important; min-height: 0 !important; }
+        .xp::before { display: none !important; }
+        .xp .when { font-size: 6pt !important; }
+        .xp h3 { font-size: 8.5pt !important; }
+        .xp .org { font-size: 6.5pt !important; }
+        .xp ul { margin-top: 5px !important; gap: 2px !important; }
+        .xp ul li { font-size: 6pt !important; line-height: 1.28 !important; padding-left: 9px !important; }
+        .xp ul li::before { width: 3px !important; height: 3px !important; top: 5px !important; }
+        #work { break-before: page !important; }
+        #work .featured { display: inline-block !important; width: calc(50% - 5px) !important; vertical-align: top !important; margin: 0 6px 7px 0 !important; }
+        #work .featured:nth-of-type(2) { margin-right: 0 !important; }
+        #work .featured .info { padding: 10px !important; }
+        #work .featured h3 { font-size: 14pt !important; margin-top: 6px !important; }
+        #work .featured p { font-size: 7.2pt !important; line-height: 1.34 !important; margin: 7px 0 !important; }
+        #work .featured .links { margin: 6px 0 !important; gap: 7px !important; }
+        #work .featured .tags .tag { font-size: 5.8pt !important; padding: 1px 4px !important; }
 
       }
     </style>
@@ -1595,9 +1734,14 @@
         <!-- featured -->
         <div class="featured reveal">
           <div class="info">
-            <span class="badge">★ Open source</span>
-            <h3>Mandum Rimba</h3>
-            <div class="role">Creator &amp; maintainer · 2026 - now</div>
+            <div class="lam-project-heading">
+              <div class="lam-project-logo"><img src="assets/hero_light.svg" alt="Mandum Rimba" /></div>
+              <div>
+                <span class="badge">★ Open source</span>
+                <h3>Mandum Rimba</h3>
+                <div class="role">Creator &amp; maintainer · 2026 - now</div>
+              </div>
+            </div>
             <p>
               An independent, non-profit map of Indonesia's forests and wildlife. I
               built it full stack: a Next.js front end with an interactive MapLibre
@@ -1611,7 +1755,6 @@
               <div class="project-metric"><strong>5.5K</strong><span>Active users</span></div>
               <div class="project-metric"><strong>1.1K</strong><span>Returning users</span></div>
             </div>
-            <p class="metrics-note">Google Analytics · Jan to Oct 2026</p>
             <div class="links">
               <a class="link-chip" href="https://mandumrimba.org" target="_blank" rel="noreferrer">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg>
@@ -1626,19 +1769,50 @@
               <span class="tag">Next.js 14</span><span class="tag">MapLibre GL</span><span class="tag">PMTiles</span><span class="tag">NestJS</span><span class="tag">MongoDB</span><span class="tag">Turborepo</span>
             </div>
           </div>
-          <div class="art" aria-hidden="true">
-            <div class="logo-plate">
-              <img src="assets/hero_light.svg" alt="Mandum Rimba" />
-            </div>
+          <div class="art">
+            <section class="lam-carousel" data-mandum-carousel aria-label="Mandum Rimba screenshots" aria-roledescription="carousel">
+              <div class="lam-carousel-track">
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-mandum-carousel-open aria-label="Enlarge Mandum Rimba landing screenshot"><img src="assets/mandum-rimba-landing.png" alt="Mandum Rimba landing page showing Indonesia from above" /></button></figure>
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-mandum-carousel-open aria-label="Enlarge air quality map screenshot"><img src="assets/mandum-rimba-air-quality-map.png" alt="Mandum Rimba map showing air quality and wind across Indonesia" /></button></figure>
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-mandum-carousel-open aria-label="Enlarge Leuser story screenshot"><img src="assets/mandum-rimba-leuser-story.png" alt="Mandum Rimba Kisah Kawasan view for Leuser forest wildlife" /></button></figure>
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-mandum-carousel-open aria-label="Enlarge biodiversity story screenshot"><img src="assets/mandum-rimba-biodiversity-story.png" alt="Mandum Rimba biodiversity story showing Sumatra wildlife" /></button></figure>
+              </div>
+              <div class="lam-carousel-controls">
+                <button class="lam-carousel-arrow" type="button" data-mandum-carousel-prev aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+                <div class="lam-carousel-dots" role="tablist" aria-label="Choose a Mandum Rimba screenshot">
+                  <button type="button" role="tab" data-mandum-carousel-dot aria-label="Show landing page" aria-selected="true"></button>
+                  <button type="button" role="tab" data-mandum-carousel-dot aria-label="Show air quality map" aria-selected="false" tabindex="-1"></button>
+                  <button type="button" role="tab" data-mandum-carousel-dot aria-label="Show Leuser story" aria-selected="false" tabindex="-1"></button>
+                  <button type="button" role="tab" data-mandum-carousel-dot aria-label="Show biodiversity story" aria-selected="false" tabindex="-1"></button>
+                </div>
+                <button class="lam-carousel-arrow" type="button" data-mandum-carousel-next aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+              </div>
+            </section>
           </div>
         </div>
+        <dialog class="lam-lightbox" data-mandum-lightbox aria-label="Mandum Rimba screenshot viewer">
+          <div class="lam-lightbox-panel">
+            <button class="lam-lightbox-close" type="button" data-mandum-lightbox-close aria-label="Close enlarged screenshots">×</button>
+            <img class="lam-lightbox-image" data-mandum-lightbox-image alt="" />
+            <div class="lam-lightbox-controls">
+              <button class="lam-carousel-arrow" type="button" data-mandum-lightbox-prev aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+              <div class="lam-carousel-dots" data-mandum-lightbox-dots role="tablist" aria-label="Choose an enlarged Mandum Rimba screenshot"></div>
+              <button class="lam-carousel-arrow" type="button" data-mandum-lightbox-next aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </dialog>
 
         <!-- Lam Rimba featured -->
-        <div class="featured reveal">
+        <div class="featured lam-featured reveal">
           <div class="info">
-            <span class="badge">★ Featured project</span>
-            <h3>Lam Rimba</h3>
-            <div class="role">Creator &amp; developer · 2026 - now</div>
+            <div class="lam-project-heading">
+              <div class="lam-project-logo"><img src="assets/lam_rimba_light.svg" alt="Lam Rimba" /></div>
+              <div>
+                <span class="badge">★ Featured project</span>
+                <h3>Lam Rimba</h3>
+                <div class="role">Creator &amp; developer · 2026 - now</div>
+              </div>
+            </div>
             <p>
               A browser-based 3D adventure about Indonesia's forests and wildlife.
               I build the interactive world and gameplay with TypeScript and
@@ -1655,12 +1829,38 @@
               <span class="tag">TypeScript</span><span class="tag">Three.js</span><span class="tag">WebGL</span><span class="tag">Vite</span><span class="tag">PWA</span>
             </div>
           </div>
-          <div class="art" aria-hidden="true">
-            <div class="logo-plate">
-              <img src="assets/lam_rimba_light.svg" alt="Lam Rimba" width="253" height="72" />
-            </div>
+          <div class="art">
+            <section class="lam-carousel" data-lam-carousel aria-label="Lam Rimba game screenshots" aria-roledescription="carousel">
+              <div class="lam-carousel-track">
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-lam-carousel-open aria-label="Enlarge planetary day screenshot"><img src="assets/lam-rimba-planetary-day.png" alt="Lam Rimba's forest planet during the day" /></button></figure>
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-lam-carousel-open aria-label="Enlarge night flight screenshot"><img src="assets/lam-rimba-aerial-night.png" alt="A night flight through the Lam Rimba forest" /></button></figure>
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-lam-carousel-open aria-label="Enlarge day flight screenshot"><img src="assets/lam-rimba-aerial-day.png" alt="A daylight flight through the Lam Rimba forest" /></button></figure>
+                <figure class="lam-carousel-slide"><button class="lam-carousel-zoom" type="button" data-lam-carousel-open aria-label="Enlarge forest bridge screenshot"><img src="assets/lam-rimba-forest-bridge.png" alt="A suspended bridge crossing Lam Rimba's forest canopy" /></button></figure>
+              </div>
+              <div class="lam-carousel-controls">
+                <button class="lam-carousel-arrow" type="button" data-lam-carousel-prev aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+                <div class="lam-carousel-dots" role="tablist" aria-label="Choose a Lam Rimba screenshot">
+                  <button type="button" role="tab" data-lam-carousel-dot aria-label="Show planetary day" aria-selected="true"></button>
+                  <button type="button" role="tab" data-lam-carousel-dot aria-label="Show night flight" aria-selected="false" tabindex="-1"></button>
+                  <button type="button" role="tab" data-lam-carousel-dot aria-label="Show day flight" aria-selected="false" tabindex="-1"></button>
+                  <button type="button" role="tab" data-lam-carousel-dot aria-label="Show forest bridge" aria-selected="false" tabindex="-1"></button>
+                </div>
+                <button class="lam-carousel-arrow" type="button" data-lam-carousel-next aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+              </div>
+            </section>
           </div>
         </div>
+        <dialog class="lam-lightbox" data-lam-lightbox aria-label="Lam Rimba screenshot viewer">
+          <div class="lam-lightbox-panel">
+            <button class="lam-lightbox-close" type="button" data-lam-lightbox-close aria-label="Close enlarged screenshots">×</button>
+            <img class="lam-lightbox-image" data-lam-lightbox-image alt="" />
+            <div class="lam-lightbox-controls">
+              <button class="lam-carousel-arrow" type="button" data-lam-lightbox-prev aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+              <div class="lam-carousel-dots" data-lam-lightbox-dots role="tablist" aria-label="Choose an enlarged Lam Rimba screenshot"></div>
+              <button class="lam-carousel-arrow" type="button" data-lam-lightbox-next aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </dialog>
 
         <!-- grid -->
         <div class="proj-grid">
@@ -1890,6 +2090,175 @@
         window.addEventListener("scroll", requestCardRender, { passive: true });
         window.addEventListener("resize", requestCardRender);
         requestCardRender();
+      }
+
+      // Lam Rimba project screenshots.
+      const lamCarousel = document.querySelector("[data-lam-carousel]");
+      if (lamCarousel) {
+        const track = lamCarousel.querySelector(".lam-carousel-track");
+        const slides = [...lamCarousel.querySelectorAll(".lam-carousel-slide")];
+        const dots = [...lamCarousel.querySelectorAll("[data-lam-carousel-dot]")];
+        const previous = lamCarousel.querySelector("[data-lam-carousel-prev]");
+        const next = lamCarousel.querySelector("[data-lam-carousel-next]");
+        let current = 0;
+        let timer;
+        const showSlide = (index) => {
+          current = (index + slides.length) % slides.length;
+          track.style.transform = `translateX(-${current * 100}%)`;
+          dots.forEach((dot, dotIndex) => {
+            const active = dotIndex === current;
+            dot.setAttribute("aria-selected", String(active));
+            dot.tabIndex = active ? 0 : -1;
+          });
+        };
+        const stopRotation = () => window.clearInterval(timer);
+        const startRotation = () => {
+          stopRotation();
+          if (!reducedMotion.matches) timer = window.setInterval(() => showSlide(current + 1), 5200);
+        };
+        previous.addEventListener("click", () => { showSlide(current - 1); startRotation(); });
+        next.addEventListener("click", () => { showSlide(current + 1); startRotation(); });
+        dots.forEach((dot, index) => dot.addEventListener("click", () => { showSlide(index); startRotation(); }));
+        lamCarousel.addEventListener("mouseenter", stopRotation);
+        lamCarousel.addEventListener("mouseleave", startRotation);
+        lamCarousel.addEventListener("focusin", stopRotation);
+        lamCarousel.addEventListener("focusout", (event) => {
+          if (!lamCarousel.contains(event.relatedTarget)) startRotation();
+        });
+        document.addEventListener("visibilitychange", () => document.hidden ? stopRotation() : startRotation());
+        startRotation();
+
+        const lightbox = document.querySelector("[data-lam-lightbox]");
+        if (lightbox) {
+          const lightboxImage = lightbox.querySelector("[data-lam-lightbox-image]");
+          const lightboxDots = lightbox.querySelector("[data-lam-lightbox-dots]");
+          const imageData = slides.map((slide) => {
+            const image = slide.querySelector("img");
+            return { src: image.currentSrc || image.src, alt: image.alt };
+          });
+          let lightboxIndex = 0;
+          const lightboxDotButtons = imageData.map((image, index) => {
+            const dot = document.createElement("button");
+            dot.type = "button";
+            dot.role = "tab";
+            dot.setAttribute("aria-label", `Show screenshot ${index + 1}`);
+            dot.addEventListener("click", () => showLightbox(index));
+            lightboxDots.append(dot);
+            return dot;
+          });
+          const showLightbox = (index) => {
+            lightboxIndex = (index + imageData.length) % imageData.length;
+            const image = imageData[lightboxIndex];
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+            lightboxDotButtons.forEach((dot, dotIndex) => {
+              const active = dotIndex === lightboxIndex;
+              dot.setAttribute("aria-selected", String(active));
+              dot.tabIndex = active ? 0 : -1;
+            });
+            showSlide(lightboxIndex);
+          };
+          lamCarousel.querySelectorAll("[data-lam-carousel-open]").forEach((button, index) => {
+            button.addEventListener("click", () => {
+              showLightbox(index);
+              stopRotation();
+              lightbox.showModal();
+            });
+          });
+          lightbox.querySelector("[data-lam-lightbox-prev]").addEventListener("click", () => showLightbox(lightboxIndex - 1));
+          lightbox.querySelector("[data-lam-lightbox-next]").addEventListener("click", () => showLightbox(lightboxIndex + 1));
+          lightbox.querySelector("[data-lam-lightbox-close]").addEventListener("click", () => lightbox.close());
+          lightbox.addEventListener("click", (event) => { if (event.target === lightbox) lightbox.close(); });
+          lightbox.addEventListener("close", startRotation);
+          lightbox.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") showLightbox(lightboxIndex - 1);
+            if (event.key === "ArrowRight") showLightbox(lightboxIndex + 1);
+          });
+        }
+      }
+
+      const mandumCarousel = document.querySelector("[data-mandum-carousel]");
+      if (mandumCarousel) {
+        const track = mandumCarousel.querySelector(".lam-carousel-track");
+        const slides = [...mandumCarousel.querySelectorAll(".lam-carousel-slide")];
+        const dots = [...mandumCarousel.querySelectorAll("[data-mandum-carousel-dot]")];
+        const previous = mandumCarousel.querySelector("[data-mandum-carousel-prev]");
+        const next = mandumCarousel.querySelector("[data-mandum-carousel-next]");
+        let current = 0;
+        let timer;
+        const showSlide = (index) => {
+          current = (index + slides.length) % slides.length;
+          track.style.transform = `translateX(-${current * 100}%)`;
+          dots.forEach((dot, dotIndex) => {
+            const active = dotIndex === current;
+            dot.setAttribute("aria-selected", String(active));
+            dot.tabIndex = active ? 0 : -1;
+          });
+        };
+        const stopRotation = () => window.clearInterval(timer);
+        const startRotation = () => {
+          stopRotation();
+          if (!reducedMotion.matches) timer = window.setInterval(() => showSlide(current + 1), 5200);
+        };
+        previous.addEventListener("click", () => { showSlide(current - 1); startRotation(); });
+        next.addEventListener("click", () => { showSlide(current + 1); startRotation(); });
+        dots.forEach((dot, index) => dot.addEventListener("click", () => { showSlide(index); startRotation(); }));
+        mandumCarousel.addEventListener("mouseenter", stopRotation);
+        mandumCarousel.addEventListener("mouseleave", startRotation);
+        mandumCarousel.addEventListener("focusin", stopRotation);
+        mandumCarousel.addEventListener("focusout", (event) => {
+          if (!mandumCarousel.contains(event.relatedTarget)) startRotation();
+        });
+        document.addEventListener("visibilitychange", () => document.hidden ? stopRotation() : startRotation());
+        startRotation();
+
+        const lightbox = document.querySelector("[data-mandum-lightbox]");
+        if (lightbox) {
+          const lightboxImage = lightbox.querySelector("[data-mandum-lightbox-image]");
+          const lightboxDots = lightbox.querySelector("[data-mandum-lightbox-dots]");
+          const imageData = slides.map((slide) => {
+            const image = slide.querySelector("img");
+            return { src: image.currentSrc || image.src, alt: image.alt };
+          });
+          let lightboxIndex = 0;
+          const lightboxDotButtons = imageData.map((image, index) => {
+            const dot = document.createElement("button");
+            dot.type = "button";
+            dot.role = "tab";
+            dot.setAttribute("aria-label", `Show screenshot ${index + 1}`);
+            dot.addEventListener("click", () => showLightbox(index));
+            lightboxDots.append(dot);
+            return dot;
+          });
+          const showLightbox = (index) => {
+            lightboxIndex = (index + imageData.length) % imageData.length;
+            const image = imageData[lightboxIndex];
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+            lightboxDotButtons.forEach((dot, dotIndex) => {
+              const active = dotIndex === lightboxIndex;
+              dot.setAttribute("aria-selected", String(active));
+              dot.tabIndex = active ? 0 : -1;
+            });
+            showSlide(lightboxIndex);
+          };
+          mandumCarousel.querySelectorAll("[data-mandum-carousel-open]").forEach((button, index) => {
+            button.addEventListener("click", () => {
+              showLightbox(index);
+              stopRotation();
+              lightbox.showModal();
+            });
+          });
+          lightbox.querySelector("[data-mandum-lightbox-prev]").addEventListener("click", () => showLightbox(lightboxIndex - 1));
+          lightbox.querySelector("[data-mandum-lightbox-next]").addEventListener("click", () => showLightbox(lightboxIndex + 1));
+          lightbox.querySelector("[data-mandum-lightbox-close]").addEventListener("click", () => lightbox.close());
+          lightbox.addEventListener("click", (event) => { if (event.target === lightbox) lightbox.close(); });
+          lightbox.addEventListener("close", startRotation);
+          lightbox.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") showLightbox(lightboxIndex - 1);
+            if (event.key === "ArrowRight") showLightbox(lightboxIndex + 1);
+          });
+        }
       }
     </script>
   </body>
