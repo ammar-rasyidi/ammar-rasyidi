@@ -6,7 +6,7 @@
   <a href="https://www.linkedin.com/in/ammar-rizal-rasyidi-6726991a1"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://www.threads.com/@r.rasyidi"><img src="https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white" alt="Threads" /></a>
   <a href="mailto:ammar.r.rasyidi@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <img src="https://komarev.com/ghpvc/?username=ammar-rasyidi&color=16a34a&style=for-the-badge&label=Profile+views" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=ammar-rasyidi&amp;label=PROFILE+VIEWS&amp;color=16a34a&amp;style=for-the-badge&amp;v=20261020" alt="Profile views" />
 </p>
 
 ---
@@ -19,7 +19,8 @@ front. I care about clean APIs, interfaces that feel right, and work that still 
 a year after launch.
 
 On the side I build and run **[Mandum Rimba](https://mandumrimba.org)**, an open-source
-map of Indonesia's forests and protected wildlife, plus the voice-AI products
+map of Indonesia's forests and protected wildlife, and **[Lam Rimba](https://lam.mandumrimba.org)**,
+a browser-based 3D conservation adventure. I also built the voice-AI products
 **[Suara AI](https://suaraai.id)** (Indonesian) and **[Voicelyf](https://voicelyf.com)** (global).
 
 - 📍 Based in Banda Aceh, Indonesia · GMT+7
@@ -52,9 +53,14 @@ map of Indonesia's forests and protected wildlife, plus the voice-AI products
 
 ## 🚀 Selected work
 
+<p align="center">
+  <a href="https://lam.mandumrimba.org"><img src="assets/lam_rimba_light.svg" alt="Lam Rimba, a 3D conservation adventure" width="253" height="72" /></a>
+</p>
+
 | Project | What it is | Stack |
 | --- | --- | --- |
 | **[Mandum Rimba](https://mandumrimba.org)** · open source | A non-profit map of Indonesia's forests and wildlife, built full stack. I designed it, wrote every layer, and keep it running. | Next.js · MapLibre · NestJS · MongoDB |
+| **[Lam Rimba](https://lam.mandumrimba.org)** · featured | A browser-based 3D adventure exploring Indonesia's forests and wildlife, with conservation gameplay on desktop and mobile. | TypeScript · Three.js · WebGL · Vite · PWA |
 | **[Suara AI](https://suaraai.id)** · live | Indonesian text-to-speech for creators, with voice cloning and a GPU inference pipeline. | NestJS · Next.js · Python · Modal |
 | **[Voicelyf](https://voicelyf.com)** · live | A global AI voice studio, English-first with multilingual voices, voice cloning, and emotion control. | NestJS · Next.js · Python · Modal |
 | **Straits Financial** · internal | Moved bond trading onto the Algorand blockchain for faster, cleaner settlement. | TypeScript · Laravel · Algorand · DocuSign |
