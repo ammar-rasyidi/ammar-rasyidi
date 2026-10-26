@@ -27,12 +27,12 @@
     <title>Ammar Rizal Rasyidi - Full Stack Developer</title>
     <meta
       name="description"
-      content="Ammar Rizal Rasyidi is a full stack developer with 8+ years building web products end to end, from APIs and databases to React and Vue front ends, plus the Mandum Rimba open-data map. Open to new roles."
+      content="Ammar Rizal Rasyidi is a full stack developer with 8+ years building web products end to end, from APIs and databases to Angular, React, and Vue front ends, plus the Mandum Rimba open-data map. Open to new roles."
     />
     <meta name="author" content="Ammar Rizal Rasyidi" />
     <meta
       name="keywords"
-      content="Ammar Rizal Rasyidi, full stack developer, backend developer, software engineer, Node.js, NestJS, Laravel, TypeScript, React, Next.js, MongoDB, Indonesia"
+      content="Ammar Rizal Rasyidi, full stack developer, backend developer, software engineer, Node.js, NestJS, Laravel, TypeScript, Angular, React, Next.js, MongoDB, Indonesia"
     />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#181818" media="(prefers-color-scheme: dark)" />
@@ -179,6 +179,7 @@
           monospace;
         letter-spacing: 0;
       }
+      .print-contact, .print-url { display: none; }
 
       /* ---- ambient background ---- */
       .bg-fx {
@@ -1498,7 +1499,73 @@
         #work .featured .tags .tag { font-size: 5.8pt !important; padding: 1px 4px !important; }
 
       }
+
+      /* Final print layout: stable two-page portfolio with the site's visual language. */
+      @media print {
+        @page { size: A4 landscape; margin: 8mm; }
+        html, body { background: #ffffff !important; color: #102646 !important; }
+        body { font-size: 8.2pt !important; line-height: 1.35 !important; }
+        .bg-fx, nav, .mobile-menu, footer, #contact, .no-print { display: none !important; }
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+        .reveal { opacity: 1 !important; translate: none !important; rotate: none !important; }
+        .wrap { max-width: none !important; padding: 0 !important; }
+        section, #about, #experience, #work { padding: 8px 0 !important; background: transparent !important; }
+        section::before, section::after, .clay-card::before, .clay-card::after { content: none !important; display: none !important; }
+        header.hero { margin: 0 0 9px !important; padding: 12px 16px !important; border: 1px solid #d5e1fc !important; border-radius: 16px !important; background: #edf0ff !important; }
+        header.hero > .wrap { display: grid !important; grid-template-columns: minmax(0, 1fr) 225px !important; align-items: center !important; gap: 16px !important; }
+        .hero-copy { display: block !important; }
+        .hero-kicker { display: block !important; font-size: 6.8pt !important; color: #4d78ae !important; }
+        .hero h1 { margin: 6px 0 0 !important; font-size: 27pt !important; line-height: 1 !important; white-space: nowrap !important; color: #102646 !important; -webkit-text-fill-color: #102646 !important; }
+        .hero .lead { margin: 7px 0 0 !important; max-width: none !important; font-size: 8.4pt !important; line-height: 1.4 !important; }
+        .hero-cta, .icon-links, .hero-flags { display: none !important; }
+        .hero-scene { display: block !important; min-height: 160px !important; overflow: hidden !important; }
+        .scene-image, .scene-glow, .scene-note { display: block !important; }
+        .scene-note { font-size: 5.5pt !important; padding: 5px 7px !important; }
+        .sec-head { margin: 0 0 6px !important; }
+        .eyebrow { font-size: 6.8pt !important; letter-spacing: .16em !important; color: #4d8ff7 !important; }
+        .sec-title { margin: 3px 0 0 !important; font-size: 16pt !important; line-height: 1.05 !important; color: #102646 !important; }
+        .sec-sub { margin: 4px 0 0 !important; font-size: 7.5pt !important; line-height: 1.35 !important; }
+        .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 7px !important; }
+        .clay-card { background: transparent !important; box-shadow: none !important; filter: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+        .skill-card.clay-card, .xp.clay-card, .featured.clay-card, .proj.clay-card { isolation: auto !important; overflow: visible !important; align-self: start !important; background: #ffffff !important; border: 1px solid #d9e7fa !important; border-radius: 10px !important; box-shadow: none !important; }
+        .skill-card { min-height: 0 !important; padding: 8px 10px !important; }
+        .skill-card .cat { margin-bottom: 5px !important; font-size: 8pt !important; }
+        .skill-card .cat .ic { width: 20px !important; height: 20px !important; }
+        .tag { padding: 1px 4px !important; font-size: 5.8pt !important; background: #f5f9ff !important; border-color: #dbe6f4 !important; }
+        #experience { padding-top: 7px !important; }
+        .timeline { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 7px !important; margin: 0 !important; padding: 0 !important; border: 0 !important; }
+        .xp { min-height: 0 !important; padding: 8px !important; }
+        .xp::before { display: none !important; }
+        .xp .when { font-size: 5.8pt !important; }
+        .xp h3 { margin-top: 3px !important; font-size: 8.6pt !important; }
+        .xp .org { font-size: 6.3pt !important; }
+        .xp ul { display: grid !important; margin-top: 4px !important; gap: 2px !important; }
+        .xp ul li { padding-left: 8px !important; font-size: 5.9pt !important; line-height: 1.28 !important; }
+        .xp ul li::before { width: 3px !important; height: 3px !important; top: 4px !important; }
+        #work { break-before: page !important; padding-top: 0 !important; }
+        #work .featured { display: block !important; width: 100% !important; margin: 0 0 7px !important; break-inside: avoid !important; }
+        #work .featured .art, .lam-lightbox { display: none !important; }
+        #work .featured .info { padding: 10px 12px !important; }
+        .lam-project-heading { gap: 8px !important; }
+        .lam-project-logo { flex-basis: 38px !important; width: 38px !important; height: 38px !important; padding: 4px !important; border-radius: 10px !important; box-shadow: none !important; }
+        #work .featured h3 { margin: 3px 0 0 !important; font-size: 13pt !important; }
+        #work .featured .role { font-size: 6.5pt !important; }
+        #work .featured p { margin: 5px 0 !important; font-size: 7pt !important; line-height: 1.34 !important; }
+        .project-metrics { margin: 6px 0 !important; gap: 5px !important; }
+        .project-metric { padding: 5px !important; box-shadow: none !important; }
+        .project-metric strong { font-size: 11pt !important; }
+        .project-metric span { margin-top: 2px !important; font-size: 5.2pt !important; }
+        #work .links { margin: 5px 0 !important; }
+        .link-chip { padding: 0 !important; border: 0 !important; background: transparent !important; font-size: 6.2pt !important; }
+        .link-chip svg { display: none !important; }
+        .proj-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 7px !important; }
+        .proj { padding: 8px !important; break-inside: avoid !important; }
+        .proj h3 { font-size: 8.8pt !important; }
+        .proj .role { font-size: 5.8pt !important; }
+        .proj p { margin: 5px 0 7px !important; font-size: 6.3pt !important; line-height: 1.3 !important; }
+      }
     </style>
+    <link rel="stylesheet" href="ats-print.css" media="print" />
 
     <script type="application/ld+json">
       {
@@ -1524,6 +1591,7 @@
           "NestJS",
           "Laravel",
           "TypeScript",
+          "Angular",
           "React",
           "Next.js",
           "MongoDB",
@@ -1582,6 +1650,10 @@
             I build web products, maps, and interactive 3D experiences. My work spans
             <strong>fintech, healthcare, AI, blockchain, music, and conservation</strong>.
           </p>
+          <div class="print-contact">
+            Banda Aceh, Indonesia | ammar.r.rasyidi@gmail.com | github.com/ammar-rasyidi<br />
+            linkedin.com/in/ammar-rizal-rasyidi-6726991a1 | ammar-rasyidi.vercel.app
+          </div>
           <div class="icon-links reveal">
           <a href="https://github.com/ammar-rasyidi" target="_blank" rel="noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
@@ -1642,7 +1714,7 @@
           <div class="skill-card reveal">
             <div class="cat"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>Frontend</div>
             <div class="tags">
-              <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Vue</span><span class="tag">Next.js</span><span class="tag">HTML &amp; CSS</span><span class="tag">MapLibre GL</span>
+              <span class="tag">TypeScript</span><span class="tag">Angular</span><span class="tag">React</span><span class="tag">Vue</span><span class="tag">Next.js</span><span class="tag">HTML &amp; CSS</span><span class="tag">MapLibre GL</span>
             </div>
           </div>
           <div class="skill-card reveal">
@@ -1740,6 +1812,7 @@
                 <span class="badge">★ Open source</span>
                 <h3>Mandum Rimba</h3>
                 <div class="role">Creator &amp; maintainer · 2026 - now</div>
+                <div class="print-url">mandumrimba.org · github.com/ammar-rasyidi/mandum-rimba</div>
               </div>
             </div>
             <p>
@@ -1811,6 +1884,7 @@
                 <span class="badge">★ Featured project</span>
                 <h3>Lam Rimba</h3>
                 <div class="role">Creator &amp; developer · 2026 - now</div>
+                <div class="print-url">lam.mandumrimba.org</div>
               </div>
             </div>
             <p>
@@ -1869,6 +1943,7 @@
               <div>
                 <h3>Suara AI</h3>
                 <div class="role">Creator &amp; Full Stack Developer</div>
+                <div class="print-url">suaraai.id</div>
               </div>
               <span class="status live"><span class="d"></span>Live</span>
             </div>
@@ -1905,6 +1980,7 @@
               <div>
                 <h3>Straits Financial</h3>
                 <div class="role">Full Stack Developer</div>
+                <div class="print-url">straitscache.com</div>
               </div>
               <span class="status internal">Internal</span>
             </div>
@@ -1929,6 +2005,7 @@
               <div>
                 <h3>Jroh Creative</h3>
                 <div class="role">Full Stack Developer</div>
+                <div class="print-url">jrohcreative.com</div>
               </div>
               <span class="status live"><span class="d"></span>Live</span>
             </div>

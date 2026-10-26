@@ -1,0 +1,204 @@
+@page { size: A4 portrait; margin: 12mm 14mm; }
+
+html, body {
+  width: auto !important;
+  height: auto !important;
+  background: #fff !important;
+  color: #111827 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 9pt !important;
+  line-height: 1.34 !important;
+}
+
+nav, .mobile-menu, .bg-fx, footer, #contact, .no-print,
+.hero-scene, .hero-flags, .hero-cta, .icon-links,
+.lam-project-logo, .featured .art, .lam-lightbox,
+img, svg, button { display: none !important; }
+
+*, *::before, *::after {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  filter: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.reveal { opacity: 1 !important; }
+.wrap { width: auto !important; max-width: none !important; padding: 0 !important; }
+
+header.hero {
+  margin: 0 0 5mm !important;
+  padding: 0 0 4mm !important;
+  border: 0 !important;
+  border-bottom: 1.5pt solid #166534 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  text-align: center !important;
+}
+header.hero > .wrap { display: block !important; min-height: 0 !important; }
+.hero-copy { display: block !important; }
+.hero-kicker {
+  display: block !important;
+  margin: 0 0 1.5mm !important;
+  color: #166534 !important;
+  font: 700 9pt/1.2 Arial, Helvetica, sans-serif !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+}
+.hero h1 {
+  margin: 0 !important;
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+  font: 700 24pt/1 Arial, Helvetica, sans-serif !important;
+  letter-spacing: -.02em !important;
+  white-space: normal !important;
+}
+.hero h1 span { color: #166534 !important; -webkit-text-fill-color: #166534 !important; }
+.hero .lead {
+  margin: 2.5mm auto 0 !important;
+  max-width: 160mm !important;
+  color: #374151 !important;
+  font-size: 9.2pt !important;
+  line-height: 1.4 !important;
+}
+.print-contact {
+  display: block !important;
+  margin-top: 2.5mm !important;
+  color: #1f2937 !important;
+  font-size: 8.5pt !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
+section, #about, #experience, #work {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+#about { margin-bottom: 4mm !important; }
+#experience { margin-top: 0 !important; }
+#work { break-before: page !important; page-break-before: always !important; }
+.sec-head { margin: 0 0 2.5mm !important; break-after: avoid !important; }
+.eyebrow, .sec-sub { display: none !important; }
+.sec-title {
+  margin: 0 !important;
+  padding: 0 0 1.2mm !important;
+  border-bottom: 1pt solid #9ca3af !important;
+  color: #111827 !important;
+  font: 700 13pt/1.15 Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+.skills-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 2mm 5mm !important;
+}
+.skill-card, .skill-card.clay-card {
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+.skill-card .cat {
+  margin: 0 0 1mm !important;
+  color: #111827 !important;
+  font-size: 9pt !important;
+  font-weight: 700 !important;
+}
+.skill-card .cat .ic { display: none !important; }
+.tags { display: flex !important; gap: 1.2mm 2mm !important; margin: 0 !important; }
+.tag {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #374151 !important;
+  font: 8pt/1.3 Arial, Helvetica, sans-serif !important;
+}
+.tag:not(:last-child)::after { content: "," !important; }
+
+.timeline {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.xp, .xp.clay-card {
+  position: relative !important;
+  min-height: 0 !important;
+  margin: 0 0 3mm !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  break-inside: avoid !important;
+}
+.xp::before { display: none !important; }
+.xp .when {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  color: #374151 !important;
+  font: 700 7.8pt/1.3 Arial, Helvetica, sans-serif !important;
+}
+.xp h3 {
+  margin: 0 !important;
+  padding-right: 38mm !important;
+  color: #111827 !important;
+  font: 700 10.5pt/1.25 Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+.xp .org { margin-top: .5mm !important; color: #166534 !important; font-size: 8.5pt !important; }
+.xp ul { display: block !important; margin: 1.2mm 0 0 !important; padding-left: 4mm !important; list-style: disc !important; }
+.xp ul li { margin: 0 0 .6mm !important; padding: 0 !important; color: #374151 !important; font-size: 8.4pt !important; line-height: 1.32 !important; }
+.xp ul li::before { display: none !important; }
+.xp .tags { display: none !important; }
+
+#work .sec-head { margin-bottom: 3mm !important; }
+#work .featured, #work .featured.clay-card,
+.proj, .proj.clay-card {
+  display: block !important;
+  width: auto !important;
+  margin: 0 0 2.4mm !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  break-inside: avoid !important;
+}
+#work .featured .info { padding: 0 !important; }
+.lam-project-heading { display: block !important; }
+.badge, .status { display: none !important; }
+#work .featured h3, .proj h3 {
+  margin: 0 !important;
+  color: #111827 !important;
+  font: 700 10.5pt/1.2 Arial, Helvetica, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+#work .featured .role, .proj .role { margin-top: .4mm !important; color: #166534 !important; font-size: 7.8pt !important; }
+.print-url {
+  display: block !important;
+  margin-top: .25mm !important;
+  color: #4b5563 !important;
+  font-size: 7.4pt !important;
+  line-height: 1.2 !important;
+}
+#work .featured p, .proj p {
+  margin: .8mm 0 !important;
+  color: #374151 !important;
+  font-size: 7.8pt !important;
+  line-height: 1.28 !important;
+}
+.project-metrics { display: flex !important; gap: 4mm !important; margin: 1mm 0 !important; }
+.project-metric { display: inline !important; padding: 0 !important; border: 0 !important; background: transparent !important; }
+.project-metric strong, .project-metric span { display: inline !important; margin: 0 !important; color: #374151 !important; font-size: 7.5pt !important; }
+.project-metric strong::after { content: " " !important; }
+#work .links, #work .featured .tags, .proj .tags { display: none !important; }
+.proj-grid { display: block !important; }
